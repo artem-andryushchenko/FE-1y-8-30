@@ -67,6 +67,8 @@ body {
     line-height: 1.04;
     /* 104.545% */
     margin-bottom: 23px;
+    position: sticky;
+    top: 0px;
 }
 
 .hiro-text {
@@ -383,4 +385,80 @@ body {
     width: 30px;
     height: 30px;
     fill: red;
+}
+
+
+.footer {
+    background: #F4F5FE;
+    padding-top: 89px;
+    padding-bottom: 96px;
+}
+
+.footer-group {
+    display: flex;
+}
+
+.footer-list {
+    margin-right: 139px;
+}
+
+.footer-list1 {
+    margin-right: 196px;
+}
+
+.footer-list2 {
+    margin-right: 133px;
+}
+
+.footer-item1:last-child {
+    margin-top: 28px;
+}
+
+.footer-item2:last-child {
+    margin-top: 10px;
+}
+
+.footer-item2:last-child > .footer-link2 {
+    padding: 20px 30px;
+    outline: 1px solid red;
+}
+
+.footer-item2:last-child > .footer-link2:hover {
+    background-color: #90AAFF;
+}
+
+.footer-item3:nth-child(3) {
+    margin-top: 16px;
+}
+
+.footer-link {
+    color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 2.25; /* 225% */
+}
+
+.footer-link1 {
+    color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 2.25; /* 225% */
+}
+
+.footer-link2 {
+    color: #000;
+font-family: Roboto;
+font-size: 11px;
+font-weight: 400;
+line-height: 2.45; /* 245.455% */
+}
+
+.footer-link3 {
+    color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 2.25; /* 225% */
 }
