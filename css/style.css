@@ -480,6 +480,12 @@ body {
     /* display: flex;
     align-items: center;
     justify-content: center; */
+    opacity: 1;
+}
+
+.is-hidden{
+    pointer-events: none; 
+    opacity: 0;
 }
 
 .modal {
@@ -509,6 +515,11 @@ body {
     letter-spacing: 0.12px;
 }
 
+.modal-box{
+    position: relative;
+
+}
+
 .modal-input {
     width: 448px;
     height: 40px;
@@ -517,7 +528,33 @@ body {
     margin-top: 4px;
     margin-bottom: 10px;
     display: block;
+    padding-left: 40px;
+
 }
+
+.modal-input:hover,
+.modal-input:focus{
+    border: none;
+    outline: 1px solid #2196F3;
+
+}
+.modal-input:hover + .modal-icon,
+.modal-input:focus + .modal-icon{
+    fill: #2196F3;
+}
+
+
+.modal-icon{
+    fill: #212121;
+    width: 18px;
+height: 18px;
+position: absolute;
+top: 11px;
+left: 10px;
+
+}
+
+
 
 .modal-comentt {
     width: 448px;
@@ -534,6 +571,13 @@ body {
     padding: 12px 16px;
     margin: 4px 0 25px 0;
     display: block;
+}
+
+
+.modal-comentt:hover,
+.modal-comentt:focus{
+  border: transparent;
+    outline: 1px solid #2196F3;
 }
 
 .modal-span {
@@ -575,11 +619,16 @@ body {
     letter-spacing: 0.96px;
     border-radius: 4px;
     background: #2196F3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 10px 52px;
     border: none;
     margin: 30px 124px 0px 124px;
+}
 
+.modal-btn:hover,
+.modal-btn:focus{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    outline: 0px solid transparent;
 }
 
 .modal-close {
@@ -591,10 +640,27 @@ body {
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    
 }
+
+.modal-close:hover,
+.modal-close:focus{
+outline: 0px solid transparent;
+.modal-exit{
+    fill: #2196F3;
+}
+}
+
+
 
 .modal-exit{
     width: 11px;
     height: 11px;
     fill: black;
+
 }
+
+

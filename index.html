@@ -43,7 +43,7 @@
             <div class="container">
                 <h1 class="hiro-title">Meet the award-winning razor</h1>
                 <p class="hiro-text">And daily essentials to upgrade your routine.</p>
-                <button type="button" class="hiro-btm">GET STARTED</button>
+                <button type="button" class="hiro-btm" data-modal-open>GET STARTED</button>
             </div>
         </section>
         <section class="about">
@@ -221,28 +221,40 @@
                 </svg></a>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <form class="modal-form">
                 <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-                <label class="modal-label" for="name">Ім'я</label>
-                <input class="modal-input" id="name" type="text">
+                <label class="modal-label" for="name" >Ім'я</label>
+                <div class="modal-box">
+                    <input class="modal-input" id="name" type="text" required>
+                <svg class="modal-icon">
+                    <use href="./img/symbol-defs.svg#icon-person"></use>
+                </svg></div>
 
-                <label class="modal-label" for="phone">Телефон</label>
-                <input class="modal-input" id="phone" type="tel">
+                <label class="modal-label" for="phone" >Телефон</label>
+                <div class="modal-box">
+                    <input class="modal-input" id="phone" type="tel" required placeholder="+38000000000" pattern="^\+?3?8?(0\d{9})$">
+                <svg class="modal-icon">
+                    <use href="./img/symbol-defs.svg#icon-phone"></use>
+                </svg></div>
 
                 <label class="modal-label" for="mail">Пошта</label>
-                <input class="modal-input" id="mail" type="email">
+                <div class="modal-box">
+                    <input class="modal-input" id="mail" type="email" required>
+                <svg class="modal-icon">
+                    <use href="./img/symbol-defs.svg#icon-email"></use>
+                </svg></div>
 
                 <label class="modal-label" for="coment">Коментар</label>
                 <textarea class="modal-comentt" name="" id="coment" placeholder="Введіть текст"></textarea>
                 <label class="modal-check">
-                    <input class="modal-checkbox" type="checkbox">
+                    <input class="modal-checkbox" type="checkbox" required>
                     <span class="modal-span">Погоджуюся з розсилкою та приймаю </span>
                     <a href="" class="modal-link">Умови договору</a>
                 </label>
                 <button class="modal-btn" type="submit">Відправити</button> 
-                <button class="modal-close" type="button">
+                <button class="modal-close" type="button" data-modal-close>
                     <svg class="modal-exit">
                         <use href="./img/symbol-defs.svg#cross"></use>
                     </svg>
@@ -251,6 +263,8 @@
 
         </div>
     </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
