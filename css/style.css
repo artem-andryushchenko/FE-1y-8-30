@@ -69,13 +69,10 @@ body {
     margin-bottom: 23px;
     position: sticky;
     top: 0px;
-    transition: color 1s, transform 1s;
+   
 }
 
-.hiro-title:hover {
-    color: red;
-    transform: scale(1.2);
-}
+
 
 .hiro-text {
     color: #FFF;
@@ -100,12 +97,10 @@ body {
     background: #FFF;
     padding: 1px 105px;
     border: none;
-    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
 }
 
-.hiro-btm:hover {
-    transform: scale(1.2) translateX(100px);
-}
+
 
 .about {
     padding-top: 70px;
@@ -150,6 +145,12 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
+    border-radius: 5px;
+    /* overflow: hidden; */
+}
+
+.product-img{
+    border-radius: 10px;
 }
 
 .logo-position {
@@ -193,7 +194,7 @@ body {
     /* 152.381% */
 }
 
-.roduct-text {
+.product-text {
     color: #000;
     text-align: center;
     font-size: 12px;
