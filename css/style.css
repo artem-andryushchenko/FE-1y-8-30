@@ -11,11 +11,11 @@ body {
 }
 
 .header {
-    /* background-color: rgba(10, 10, 10, 0.5);
-    position: fixed;
-    width: 100%; */
     padding-top: 13px;
     padding-bottom: 13px;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: 10px;
 }
 
 .header>.container {
